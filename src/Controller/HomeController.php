@@ -13,7 +13,7 @@ use App\Entity\User;
 
 class HomeController extends AbstractController
 {
-    #[Route('/home', name: 'app_home')]
+    #[Route('/paghome', name: 'app_home')]
     public function index(ManagerRegistry $doctrine): Response
     {   
         # Aïda : this line below is the "read" from CRUD operations
