@@ -9,11 +9,11 @@ Les fonctionalités :
     - afficher toutes les tâches
     - supprimer une tâche
 
-Les commentaires que j'ai fait sont écrit de la manière suivante : "Aïda" = ..commentaire.. 
-tout le reste a été écrit par Symfony.
+Les commentaires : "Aïda" = ..commentaire.. ont été écrits par moi.
+Tout le reste a été écrit par Symfony.
 
 ## Les paths des modifications faites par moi
-Voici les chemins de fichiers que j'ai modfié et ajouté pour facilité
+Voici les chemins de fichiers que j'ai modfié et ajouté pour facilité.
 
 Configurations :
     J'ai modifié les configurations liées à ma database dans le fichier .env
