@@ -1,0 +1,19 @@
+<!-- Aïda : this is the home page, it shows all the tasks saves on the DDB -->
+<!DOCTYPE html>
+<html>
+<head>
+    {# Aîda : This line, below, make the home page responsive  #}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Tasks list</title>
+</head>
+<body>
+    <main>
+        {# Aïda :user will echo the name that the user choose #}
+        <h1>Please enter your name.</h1>
+            <form method="post" action="{{ path('user_name') }}">
+                <input type="text" name="user" placeholder="Please enter your name"></input>
+                <button type="submit">Send</button>
+            </form>    
+        </main>
+</body>
+</html>

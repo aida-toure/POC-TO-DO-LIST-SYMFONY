@@ -1,0 +1,45 @@
+<!-- Aïda : this is the home page, it shows all the tasks saves on the DDB -->
+<!DOCTYPE html>
+<html>
+<head>
+    {# Aîda : This line, below, make the home page responsive  #}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Tasks list</title>
+</head>
+<body>
+    <main>
+        {# Aïda : {{user}} will echo the name that the user choose #}
+        <h1>Welcome {{ user }} !</h1>
+        <h2> All your tasks<h2>
+        {# This button creates a task #}
+        <form method="post" action="{{ path('app_create') }}" >
+            <button type="submit">Create</button>
+        </form>
+        <section>
+            <ul>
+            {# Aïda : loop for used to duplicate the container for each tasks
+                    also implement the name and the description to the appropriate container#}
+                {% for task in tasks %}
+                    <div>
+                        <h4>{{ task.title }}</h4>
+                        <div> {{ task.status }}</div>
+                        <h6>{{ task.description }}</h6>
+
+                       {# Aïda : this button modifies the task  #}
+                        <form method="post" action="{{path('app_home')}}">
+                            <button type="submit">Modify</button>
+                        </form>
+                            {# Aïda : this button delete the task #}
+                            <form method="post" action="{{path('task_delete', {'id' : task.id})}}">
+                                <button type="submit">Delete</button>
+                        </form>
+                    </div>
+                    {# Aïda : If there is no tasks in the DDB, it will show the prompt below #}
+                {% else %}
+                    <div> No tasks </div>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
