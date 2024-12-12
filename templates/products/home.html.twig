@@ -22,7 +22,11 @@
                 {% for task in tasks %}
                     <div>
                         <h4>{{ task.title }}</h4>
-                        <div> {{ task.status }}</div>
+                        {% if task.status == false %}
+                            <h6 style="color: #FF0000 "> Not done </h6>
+                        {% else %} 
+                            <h6 style="color: #00ff00 "> done </h6>
+                        {% endif %}
                         <h6>{{ task.description }}</h6>
 
                        {# Aïda : this button modifies the task  #}
