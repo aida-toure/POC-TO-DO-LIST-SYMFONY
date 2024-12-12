@@ -14,7 +14,9 @@ use Symfony\Component\HttpFoundation\Request;
 #[Route('/task')]
 class CRUDController extends AbstractController
 {
-    # Aïda : Not sure if it's the best practice, but I put CRUD methods here
+    # Aïda : Not sure if it's a good practice, but I put CRUD methods here. This is where the task are created, updated, and deleted
+    # I decided to do that because i was scared to make the code too heavy on others controller. 
+    
     #[Route('/create', name: 'task_create')]
     public function create(Request $request, ManagerRegistry $doctrine): Response{
         if($request->isMethod("POST")){

@@ -13,7 +13,7 @@ use App\Entity\User;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class HomeController extends AbstractController
-{
+{   # Aïda : This is te home page, this is where the tasks are showed,and differents operations can be done to the task in this page
     #[Route('/home', name: 'app_home')]
     public function index(SessionInterface $session,ManagerRegistry $doctrine, Request $request): Response
     {   
