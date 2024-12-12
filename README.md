@@ -23,7 +23,9 @@ MVC :
     Les données utilisées sont dans le dossier : src\Entity
 
 ## Quelques difficultés :
-Malaheureusment je n'ai pas pu faire la partie "update" des opérations CRUD. J'ai tenté de faire en sorte que le user puisse modifier dans la page même en modifiant la type du conteneur HTML.
+Le projet a été plus compliqué que je le pensais.
+Malheureusement je n'ai pas pu faire la partie "update" des opérations CRUD. J'ai tenté de faire en sorte que le user puisse modifier dans la page même en modifiant la type du conteneur HTML.
+Je n'ai pas non plus fait l'API en ligne.
 
 ## Question : Comment organiseriez-vous la gestion des permissions utilisateurs dans une application de gestion ?
 
